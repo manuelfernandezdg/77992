@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="logo">DW</a></h1>
+        <nav>
+            <ul>
+                <li><a href="clase1.html" class="nav">Clase 1</a></li>
+                <li><a href="clase2.html" class="nav">Clase 2</a></li>
+                <li><a href="clase3.html" class="nav">Clase 3</a></li>
+                <li><a href="" class="nav">Clase 4</a></li>
+                <li><a href="" class="nav">Clase 5</a></li>
+                <li><a href="" class="nav">Clase 6</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="modeloDeCaja">
+            <h1>Modelo de caja</h1>
+            <p>En CSS llamamos "caja" a lo que envuelve cada elemento de HTML. Consiste en:</p>
+            <ul>
+                <li>Contenido</li>
+                <li>Padding (o margen interior)</li>
+                <li>Border (borde externo)</li>
+                <li>Margin (margen externo)</li>
+            </ul>
+            <div class="box-model-ejemplo">
+                <span>Contenido</span>
+            </div>
+
+            <h2>Tipos de elementos</h2>
+            <h3>Block | Bloque</h3>
+            <ul>
+                <li>Tienden a ocupar el ancho disponible de su contenedor.</li>
+                <li>Agregan saltos de línea antes y después de su posición.</li>
+                <li>Pueden contener elementos de línea y bloque.</li>
+                <li>Admiten parámetros de alto y ancho.</li>
+            </ul>
+
+            <code>&lt;body&gt;, &lt;header&gt;, &lt;nav&gt;, &lt;div&gt;</code>
+
+            <h3>Inline | En línea</h3>
+            <ul>
+                <li>Ocupan sólo el área de su contenido.</li>
+                <li>No agregan saltos de línea.</li>
+                <li>Pueden contener solamente otros elementos de línea.</li>
+                <li>No admiten parámetros de alto y ancho.</li>
+            </ul>
+
+            <code>&lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;span&gt;</code>
+
+            <h3>Inline-block | En línea-bloque</h3>
+            <ul>
+                <li>Ocupan sólo el área de su contenido.</li>
+                <li>No agregan saltos de línea.</li>
+                <li>Pueden contener solamente otros elementos de línea.</li>
+                <li>Admiten parámetros de alto y ancho.</li>
+            </ul>
+
+            <code>&lt;img&gt;, &lt;input&gt;</code>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Sobre nuestro curso:</h1>
+        <ul>
+            <li><a href="https://www.educacionit.com/curso-de-html" class="footer">Programa</a></li>
+            <li><a href="https://alumni.education" class="footer">Alumni</a></li>
+            <li><a href="https://discord.gg/SpRytRKP" class="footer">Discord</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
