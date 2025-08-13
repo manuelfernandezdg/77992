@@ -32,8 +32,39 @@
             <img src="img/github.png" alt="Repositorio del curso en Github">
             <ul>
                 <li><a href="https://github.com/manuelfernandezdg/77992" target="_blank">Repo del curso</a></li>
-                <li><a href="" target="_blank">Ver página online</a></li>
+                <li><a href="https://manuelfernandezdg.github.io/77992" target="_blank">Ver página online</a></li>
             </ul>
+        </section>
+
+        <section>
+            <h1>Formularios</h1>
+
+            <form action="">
+                <h2>Nuevo usuario</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="¿Cuál es tu nombre?">
+                <span>Mensaje de estado</span>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="¿Cuál es tu apellido?">
+                <span>Mensaje de estado</span>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@dominio.com">
+                <span>Mensaje de estado</span>
+
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Elige tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+                <span>Mensaje de estado</span>
+
+                <label> ¿Te gustaría recibir novedades por email?
+                    <input type="radio" name="newsletter" value="newsletter-si" checked> Si
+                    <input type="radio" name="newsletter" value="newsletter-no"> No
+                </label>
+
+                <button>Enviar</button>
+            </form>
+
         </section>
     </main>
     
