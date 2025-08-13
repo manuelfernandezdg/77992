@@ -54,7 +54,7 @@ main {
 }
 
 section {
-    width: min(48rem, 100%);
+    width: min(62rem, 100%);
     margin: 1rem auto;
 }
 
@@ -75,6 +75,7 @@ footer ul {
     padding: 0;
 
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -185,6 +186,93 @@ a.footer:active {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+#bienvenida h1 {
+    color: hsl(208, 100%, 94%);
+    background-color: hsla(208, 100%, 8%, 0.75);
+    padding: 1rem 0;
 }
 
 /* Clase 5 */
+.contenedor-novedades {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+article {
+    text-align: center;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.2rem;
+}
+
+article h2,
+article h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+article h2 {
+    font-weight: 700;
+}
+
+article h3 {
+    font-weight: 400;
+}
+
+.contenedor-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+a.btn-outline:link,
+a.btn-outline:visited {
+    color: hsl(208, 100%, 8%);
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+a.btn-outline:hover,
+a.btn-outline:active {
+    color: hsl(286, 100%, 65%);
+    background-color: hsl(208, 100%, 8%);
+}
+
+a.btn-fill:link,
+a.btn-fill:visited {
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+
+    color: hsl(208, 100%, 94%);
+    background-color: hsl(208, 100%, 8%);
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+    color: hsl(286, 100%, 65%);
+    background-color: hsl(208, 100%, 15%);
+}
+
+/* Social */
+.contacto img {
+    width: 2.5rem;
+}
