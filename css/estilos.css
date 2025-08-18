@@ -277,5 +277,56 @@ a.btn-fill:active {
     width: 2.5rem;
 }
 
-/* Clase 6 */
+/* Clase 6 / 7 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 
+    width: min(24rem, 100%);
+    margin: 0 auto;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+form span {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(286, 100%, 35%);
+
+    visibility: hidden;
+}
+
+form input,
+form button,
+form select,
+form textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+}
+
+form button {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+}
+
+form button:hover {
+    background-color: hsl(286, 100%, 65%);
+    border: 0.1rem solid hsl(286, 100%, 65%);
+    color: hsl(208, 100%, 8%);
+    cursor: pointer;
+}
+
+form input:focus,
+form button:focus,
+form select:focus,
+form textarea {
+    /* outline: 0.3rem solid red;
+    outline-offset: 0.5rem; */
+
+    outline: none;
+    border: 0.1rem solid hsl(286, 100%, 65%);
+}
