@@ -330,3 +330,79 @@ form textarea {
     outline: none;
     border: 0.1rem solid hsl(286, 100%, 65%);
 }
+
+/* Clase 8 */
+/* .btn-icon-home,
+.btn-icon-notif,
+.btn-icon-fav {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+} */
+
+.btn-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.btn-icon-home {
+    background-image: url('../img/home-outline.svg');
+}
+
+.btn-icon-home:hover {
+    background-image: url('../img/home-fill.svg');
+}
+
+.btn-icon-notif {
+    background-image: url('../img/notifications-outline.svg');
+}
+
+.btn-icon-notif:hover {
+    background-image: url('../img/notifications-fill.svg');
+}
+
+.btn-icon-fav {
+    background-image: url('../img/favorite-outline.svg');
+}
+
+.btn-icon-fav:hover {
+    background-image: url('../img/favorite-fill.svg');
+}
+
+/* Los lectores de pantalla no leen CSS. */
+.sr-only {
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Buscador */
+.buscador {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+}
+
+.buscador button {
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+    background-image: url('../img/search-outline-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buscador button:hover {
+    background-image: url('../img/search-outline-light.svg');
+}

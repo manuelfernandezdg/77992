@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 7</title>
+    <title>Clase 8</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,47 +31,38 @@
 
     <main>
         <section id="bienvenida">
-            <h1>Bienvenidos a la clase 7</h1>
+            <h1>Bienvenidos a la clase 8</h1>
+        </section>
+
+        <section>
+            <h1>Imágenes e iconos</h1>
+            <h2>Material Symbols</h2>
+            <ul>
+                <li><a href="https://fonts.google.com/icons" target="_blank">Material Symbols en Google Fonts</a></li>
+                <li><a href="https://developers.google.com/fonts/docs/material_symbols?hl=es-419" target="_blank">Documentación sobre Material Symbols</a></li>
+            </ul>
+
+            <a href="index.html" class="btn-icon btn-icon-home" aria-label="Ir a la home" title="Ir a la home">
+                <span class="sr-only">Ir a la home</span>
+            </a>
+            
+            <a href="" class="btn-icon btn-icon-notif" aria-label="Ver mis notificaciones" title="Ver mis notificaciones">
+                <span class="sr-only">Ver mis notificaciones</span>
+            </a>
+
+            <a href="" class="btn-icon btn-icon-fav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                <span class="sr-only">Agregar a favoritos</span>
+            </a>
         </section>
         <section>
-            <h1>Formularios: 2da. parte</h1>
-            <form action="">
-                <h2>Log in</h2>
-                <label for="email">Email</label>
-                <input type="email" placeholder="¿Cuál es tu email?" required>
-                <span>Mensaje de estado</span>
-
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
-                <span>Mensaje de estado</span>
-
-                <button>Ingresar</button>
-            </form>
-            <br>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" required placeholder="¿Cómo te llamás?">
-                <span>Mensaje de estado</span>
-
-                <label for="asunto">Asunto</label>
-                <select name="asunto" id="asunto">
-                    <option value="miPedido" selected>Mi pedido</option>
-                    <option value="miSubscripción">Mi subscripción</option>
-                    <option value="misNovedades">Mis novedades</option>
-                    <option value="otraConsulta">Otra consulta</option>
-                </select>
-                <span>Mensaje de estado</span>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje"></textarea>
-                <span>Mensaje de estado</span>
-
-                <label>
-                    Acepto los términos y condiciones
-                    <input type="checkbox" value="acepta" required>
-                </label>
-
-                <button>Enviar mensaje</button>
+            <h1>Buscador</h1>
+            <form action="" class="buscador">
+                <label for="buscar" class="sr-only">Buscar</label>
+                <input type="text" name="buscar" id="buscar" placeholder="¿Qué vamos a leer hoy?">
+                
+                <button aria-label="Buscar dentro del catálogo">
+                    <span class="sr-only">Buscar dentro del catálogo</span>
+                </button>
             </form>
         </section>
     </main>
