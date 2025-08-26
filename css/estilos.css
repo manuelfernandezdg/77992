@@ -1,5 +1,5 @@
 /* Hoja de estilos */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .colores {
     color: hsl(208, 100%, 8%);
@@ -36,12 +36,19 @@ header {
     padding: 1rem 2rem;
 
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+}
+
+header * {
+    margin: 0;
 }
 
 header ul {
     list-style: none;
+    margin: 0;
     padding: 0;
 
     display: flex;
@@ -54,7 +61,7 @@ main {
 }
 
 section {
-    width: min(62rem, 100%);
+    width: min(65rem, 100%);
     margin: 1rem auto;
 }
 
@@ -131,6 +138,18 @@ a.logo:visited {
 a.logo:hover,
 a.logo:active {
     color: hsl(286, 100%, 85%);
+}
+
+/* Estilos para los links del Main */
+main a:link, 
+main a:visited {
+    color: hsl(286, 100%, 35%);
+    text-decoration: none;
+}
+
+main a:hover,
+main a:active {
+    color: hsl(286, 100%, 65%);
 }
 
 /* Estilos para el link del Footer */
@@ -405,4 +424,170 @@ form textarea {
 
 .buscador button:hover {
     background-image: url('../img/search-outline-light.svg');
+}
+
+/* Clase 9 */
+/* Producto */
+#producto * {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+}
+
+.contenedor-productos {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    padding: 8rem 2rem;
+    background-color: hsl(231, 13%, 11%);
+    color: hsl(55, 55%, 91%);
+}
+
+.productos-izq {
+    /* background-color: cadetblue; */
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.productos-der {
+    /* background-color: brown; */
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.contenedor-productos img {
+    width: auto;
+}
+
+.contenedor-productos ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.contenedor-productos h1 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.contenedor-productos p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contenedor-productos p strong {
+    font-weight: 700;
+}
+
+a.prod-categorias:link,
+a.prod-categorias:visited {
+    background-color: hsl(231, 100%, 85%);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: hsl(231, 13%, 11%);
+}
+
+a.prod-categorias:hover,
+a.prod-categorias:active {
+    color: hsl(231, 13%, 11%);
+    background-color: hsl(286, 100%, 65%);
+}
+
+.contenedor-productos h2 {
+    margin: 0;
+    padding: 1rem 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(231, 100%, 85%);
+}
+
+.contenedor-productos a.btn-fill:link,
+.contenedor-productos a.btn-fill:visited {
+    background-color: hsl(231, 100%, 85%);
+    color: hsl(231, 13%, 11%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contenedor-productos a.btn-fill:hover,
+.contenedor-productos a.btn-fill:active {
+    background-color: hsl(286, 100%, 65%);
+}
+
+/* Contacto */
+
+#contacto * {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+}
+
+.contenedor-contacto {
+    display: flex;
+    gap: 1rem;
+}
+
+.contacto-izq {
+    width: 40rem;
+}
+
+.contacto-izq video {
+    width: 100%;
+}
+
+.contacto-der * {
+    margin: 0;
+    text-align: left;
+}
+
+.contacto-der {
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contacto-der h1 {
+    font-size: 2rem;
+}
+
+.contacto-der h2 {
+    font-size: 1.5rem;
+}
+
+#contacto iframe {
+    margin-top: 1rem;
+    width: 100%;
+    height: 30rem;
+    border: none;
+}
+
+/* Tablas */
+
+table {
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th,
+td {
+    border: 0.1rem solid hsl(208, 100%, 8%);
+}
+
+table img {
+    width: 8rem;
 }
